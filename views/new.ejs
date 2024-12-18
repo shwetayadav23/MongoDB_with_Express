@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write new chat</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:#0d1b36;
+        }
+        h3{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Write new chat</h3>
+    <form method="POST" action="/chats">
+        <input placeholder="Who are you?" name="from"><br><br>
+        <textarea rows="10" cols="35"name="msg" placeholder="Write your message here..."></textarea><br><br>
+        <input placeholder="Name of receiver" name="to"><br><br>
+        <button>Create Chat</button>
+    </form>
+</body>
+</html>
